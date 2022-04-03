@@ -1,5 +1,6 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -27,8 +28,17 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full">
-        <Outlet />
+      <body className="h-full p-5">
+        <nav className="mb-5">
+          <Link className="font-bold" to="/">
+            Tom Prince
+          </Link>
+          <span>&nbsp;|&nbsp;</span>
+          <Link to="/posts">posts</Link>
+        </nav>
+        <main>
+          <Outlet />
+        </main>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

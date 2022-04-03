@@ -16,16 +16,23 @@ async function getPost(fileName) {
 
 export const loader: LoaderFunction = async ({ params }) => {
   const post = await getPost(params.postId);
-  return json({ post });
+  return json(
+    { post },
+    {
+      headers: {
+        // max-age controls the browser cache
+        // s-maxage controls a CDN cache
+        "Cache-Control": "public, max-age=30, s-maxage=86400",
+      },
+    }
+  );
 };
 export default function Index() {
   const { post } = useLoaderData();
   return (
-    <main className="relative min-h-screen bg-white">
-      <div className="prose mx-auto">
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: md().render(post.content) }} />
-      </div>
-    </main>
+    <div className="prose mx-auto">
+      <h1>{post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: md().render(post.content) }} />
+    </div>
   );
 }
