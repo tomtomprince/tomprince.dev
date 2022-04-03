@@ -1,3 +1,13 @@
+# Personal Site for Tom Prince
+
+Learning remix and tailwinds
+
+## Blog
+
+Put posts in /posts as md and deploy. There's a list and a detail view. Uses vanilla tailwinds prose styles.
+
+# Original README Below
+
 # Remix Indie Stack
 
 ![The Remix Indie Stack](https://repository-images.githubusercontent.com/465928257/a241fa49-bd4d-485a-a2a5-5cb8e4ee0abf)
