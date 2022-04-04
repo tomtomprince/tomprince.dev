@@ -1,6 +1,7 @@
 # Personal Site for Tom Prince
 
 Learning remix and tailwinds
+https://blog.openreplay.com/creating-a-markdown-blog-powered-by-next-js-in-under-an-hour
 
 ## Blog
 
