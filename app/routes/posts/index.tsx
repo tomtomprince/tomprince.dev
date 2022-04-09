@@ -34,11 +34,14 @@ export default function Index() {
   return (
     <div className="prose mx-auto">
       <ul>
-        {posts.map((post) => {
+        {posts.map((post: any) => {
           const path = `/posts/${post.slug}`;
           return (
             <li key={post.slug}>
-              <Link to={path}>{post.frontmatter.title}</Link>
+              <Link to={path}>
+                <h2 style={{marginTop: 0}}>{post.frontmatter.title}</h2>
+                <p>{post.frontmatter.description}</p>
+              </Link>
             </li>
           );
         })}

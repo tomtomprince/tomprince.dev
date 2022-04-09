@@ -1,3 +1,3 @@
 export default function Index() {
-  return <div>Hi, I'm Tom</div>;
+  return <div className="prose mx-auto">Hi, I'm Tom</div>;
 }

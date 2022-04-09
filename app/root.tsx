@@ -29,7 +29,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full p-5">
-        <nav className="mb-5">
+        <nav className="mb-5 text-center">
           <Link className="font-bold" to="/">
             Tom Prince
           </Link>
