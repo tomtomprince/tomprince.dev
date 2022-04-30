@@ -7,6 +7,7 @@
   "scripts": {
     "postinstall": "remix setup node",
     "build": "run-s build:*",
+    "heroku-postbuild": "build",
     "build:css": "npm run generate:css -- --minify",
     "build:remix": "remix build",
     "dev": "run-p dev:*",
