@@ -1,0 +1,46 @@
+---
+title: "Notes on Clean Architecture by Uncle Bob - Chapter 1"
+description: >-
+  Working my way throught a deeper reading of Clean Architecture.
+metaTitle: "Notes on Clean Architecture by Uncle Bob - Chapter 1"
+metaDesc: "Working my way throught a deeper reading of Clean Architecture"
+socialImage: images/22-09-2021.jpg
+date: "2021-05-01"
+tags:
+  - books
+  - clean code
+  - programming
+  - clean architecture
+---
+
+## What is Design and Architecture
+
+Design and Architecture are sometimes seen as different in the context of software engineering. Uncle Bob asserts, and I agree, that there is no difference.
+
+The mental model of an architectural blueprint of a house is key: Architecture is not only concerned with high-level concerns, but goes all the way down to the low-level details.
+
+Software is designed with a specific goal in mind, and architecture is a part of that.
+
+## The Goal
+
+I highly recommend The Goal, a book on operations management. It argues the goal of any business is to make money.
+
+In the context of software design and Clean Architecture, the goal is to "minimize the human resources required to build and maintain the required system".
+
+"The measure of design quality is simply the measure fo the effort required to meet the needs of the customer. If that effort is low, and stays low throughout the lifetime of the system, the design is good. If that effort grows with each new release, the design is bad. It's as simple as that." - Robert C. Martin, Clean Architecture, p 4
+
+## The only way to go fast, is to go well
+
+Uncle Bob says this in all his books, and my experience lines up with this. Yes, there are times when hacking something together can pay off. Usually, this ends up being added tech debt.
+
+The latest example from my career is an internal tool I built the front end for. Its purpose was to facilitate review of applications of prospective members at Common. I rushed to get it done and it... mostly worked.
+
+However, the month after release was constant interupt tasks to fix mistakes on the front and back end to unblock internal users. Expectations were managed, but this was a drag for all involved.
+
+The whole application was supposed to be a bandaid to be replaced after the initial rush ended.
+
+The rush never really ended, and this application is still in use.
+
+In the book, Martin talks about the illusive redesign from scratch. When it even happens, unless culture is actually changed to prevent the mistakes of the past, you end up in the same mess. This is disregarding totally the problem of actually releasing the new system if feature parity is required.
+
+Martin concludes saying that we need torecognize and avoid our overconfidence and take software architecture seriously. To do that, we need to know what it is.
